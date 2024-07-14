@@ -1,2 +1,4 @@
-kae
-main.o
+*[!.*]
+
+# ignore all object files too
+*.o
