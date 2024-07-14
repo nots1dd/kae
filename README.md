@@ -40,3 +40,14 @@ Since the current project is not an original creation, there are a LOT of plans 
 - [ ] 4. Possibly integrate tmux/ncurses to create terminals within the editor (have to figure this one out)
 
 - [ ] 5. Add a `~/.kilorc` file for some user config capability
+
+
+## CREDITS
+
+The origin of this editor is totally derived from `https://github.com/snaptoken/kilo-tutorial`
+
+This project is intended to help myself understand more about text editors, along with building upon something already made.
+
+## LICENSE
+
+This project is licensed under GNU - GPL version 3
