@@ -1,5 +1,3 @@
-# Makefile for the text editor
-
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c99
 LDFLAGS =
@@ -8,7 +6,7 @@ LDFLAGS =
 TARGET = kae
 
 # Source files
-SRCS = main.c
+SRCS = main.c src/terminal.c ext/c_ext.c
 
 # Object files
 OBJS = $(SRCS:.c=.o)
@@ -23,6 +21,12 @@ $(TARGET): $(OBJS)
 # Rule to compile the source files into object files
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+# Include the header files for better error reporting
+INCLUDES = -I. -Isrc -Iext
+
+# Add include directive to the compiler flags
+CFLAGS += $(INCLUDES)
 
 # Clean up build artifacts
 clean:

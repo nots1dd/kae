@@ -1,4 +1,4 @@
-*[!.*]
-
+kae
+build/
 # ignore all object files too
 *.o

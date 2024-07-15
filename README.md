@@ -12,11 +12,21 @@ This is a better and more ambitious version of `kilo`
 ## REQUIREMENTS
 
 1. Unix System (possibly Bash on Windows too) with x86_64 Arch
-2. C compiler like `GCC`, `clang`
+2. C compiler like `GCC`, `clang` (optional: `cmake`)
 
 ## BUILDING
 
 -> Firstly, clone this repository `https://github.com/nots1dd/kae`
+
+With CMake:
+
+-> Ensure `cmake` is in your UNIX system and working
+
+-> Run `cmake -S . -B build/` that will build all the files as listed in `CMakeLists.txt`
+
+-> Finally run `cmake --build build/` to get a `./build/kae` executable 
+
+-> Simply run the executable on any file!
 
 With Makefile:
 
